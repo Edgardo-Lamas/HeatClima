@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herramientas de cálculo para diseño de sistemas de calefacción - Radiadores y Piso Radiante">
+    <title>Herramientas de Cálculo - Heat&Clima</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-temperature-high"></i>
+                        <span>Heat&Clima</span>
+                    </a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="technical.html">Contenido Técnico</a></li>
+                    <li><a href="portfolio.html">Portafolio</a></li>
+                    <li><a href="tools.html" class="active">Herramientas</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Herramientas de Cálculo</h1>
+            <p>Calculadoras y herramientas profesionales para diseño de sistemas de calefacción</p>
+        </div>
+    </section>
+
+    <!-- Tools Overview -->
+    <section class="tools-overview">
+        <div class="container">
+            <div class="tools-grid">
+                <!-- Radiator Calculator -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-fire-alt"></i>
+                    </div>
+                    <h2>Calculadora de Radiadores</h2>
+                    <p>Herramienta para calcular la potencia térmica necesaria y dimensionar radiadores según las características del espacio.</p>
+                    <div class="tool-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Cálculo de carga térmica</li>
+                            <li><i class="fas fa-check"></i> Selección de radiadores</li>
+                            <li><i class="fas fa-check"></i> Dimensionamiento de tuberías</li>
+                            <li><i class="fas fa-check"></i> Exportar resultados a PDF</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary tool-btn" data-tool="radiator">
+                        <i class="fas fa-calculator"></i> Abrir Calculadora
+                    </button>
+                    <div class="tool-status">
+                        <span class="badge badge-development">En Desarrollo</span>
+                    </div>
+                </div>
+
+                <!-- Floor Heating Calculator -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h2>Calculadora de Piso Radiante</h2>
+                    <p>Diseño completo de sistemas de calefacción por suelo radiante con cálculos hidráulicos y térmicos.</p>
+                    <div class="tool-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Cálculo térmico por zonas</li>
+                            <li><i class="fas fa-check"></i> Diseño de circuitos</li>
+                            <li><i class="fas fa-check"></i> Cálculo hidráulico</li>
+                            <li><i class="fas fa-check"></i> Planos de instalación</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary tool-btn" data-tool="floor-heating">
+                        <i class="fas fa-calculator"></i> Abrir Calculadora
+                    </button>
+                    <div class="tool-status">
+                        <span class="badge badge-development">En Desarrollo</span>
+                    </div>
+                </div>
+
+                <!-- Revit Integration -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h2>Integración con Revit</h2>
+                    <p>Herramientas y plugins para integrar cálculos directamente con proyectos de Autodesk Revit MEP.</p>
+                    <div class="tool-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Importar modelos BIM</li>
+                            <li><i class="fas fa-check"></i> Cálculos desde Revit</li>
+                            <li><i class="fas fa-check"></i> Familias personalizadas</li>
+                            <li><i class="fas fa-check"></i> Sincronización bidireccional</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary tool-btn" data-tool="revit">
+                        <i class="fas fa-plug"></i> Ver Integración
+                    </button>
+                    <div class="tool-status">
+                        <span class="badge badge-planned">Planificado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Preview Sections -->
+    <section class="tool-preview" id="radiator-preview">
+        <div class="container">
+            <div class="preview-header">
+                <h2><i class="fas fa-fire-alt"></i> Calculadora de Radiadores</h2>
+                <p>Próximamente: Herramienta interactiva para cálculo y dimensionamiento de radiadores</p>
+            </div>
+            <div class="preview-content">
+                <div class="preview-features">
+                    <h3>Características Principales</h3>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <div>
+                                <h4>Cálculo de Carga Térmica</h4>
+                                <p>Cálculo automático según EN 12831 considerando transmisión, ventilación y orientación</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-sliders-h"></i>
+                            <div>
+                                <h4>Dimensionamiento Preciso</h4>
+                                <p>Selección óptima de radiadores con base de datos de fabricantes</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-file-export"></i>
+                            <div>
+                                <h4>Reportes Profesionales</h4>
+                                <p>Exportación de resultados y memoria de cálculo en formato PDF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-mockup">
+                    <div class="mockup-placeholder">
+                        <i class="fas fa-desktop"></i>
+                        <p>Vista previa de la interfaz</p>
+                        <small>La herramienta incluirá formularios intuitivos, visualizaciones gráficas y exportación de resultados</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tool-preview alternate" id="floor-heating-preview">
+        <div class="container">
+            <div class="preview-header">
+                <h2><i class="fas fa-layer-group"></i> Calculadora de Piso Radiante</h2>
+                <p>Próximamente: Diseño completo de sistemas de suelo radiante</p>
+            </div>
+            <div class="preview-content">
+                <div class="preview-mockup">
+                    <div class="mockup-placeholder">
+                        <i class="fas fa-desktop"></i>
+                        <p>Vista previa de la interfaz</p>
+                        <small>Incluirá diseño de circuitos, cálculo de separación de tubos y generación de planos</small>
+                    </div>
+                </div>
+                <div class="preview-features">
+                    <h3>Características Principales</h3>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-map"></i>
+                            <div>
+                                <h4>Diseño por Zonas</h4>
+                                <p>División del proyecto en zonas con control independiente</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-water"></i>
+                            <div>
+                                <h4>Cálculo Hidráulico</h4>
+                                <p>Dimensionamiento de circuitos, colectores y bombas de recirculación</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-draw-polygon"></i>
+                            <div>
+                                <h4>Planos Automáticos</h4>
+                                <p>Generación de planos de instalación con trazado de circuitos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tool-preview" id="revit-preview">
+        <div class="container">
+            <div class="preview-header">
+                <h2><i class="fas fa-cube"></i> Integración con Revit</h2>
+                <p>Futuro: Conexión directa entre herramientas de cálculo y proyectos BIM</p>
+            </div>
+            <div class="preview-content">
+                <div class="preview-features">
+                    <h3>Funcionalidades Planificadas</h3>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <h4>Importación de Modelos</h4>
+                                <p>Lectura de geometría y espacios desde modelos Revit</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <div>
+                                <h4>Sincronización en Tiempo Real</h4>
+                                <p>Actualización bidireccional entre cálculos y modelo BIM</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <div>
+                                <h4>Biblioteca de Familias</h4>
+                                <p>Familias Revit parametrizadas de todos los componentes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-mockup">
+                    <div class="mockup-placeholder">
+                        <i class="fas fa-cube"></i>
+                        <p>Integración BIM</p>
+                        <small>Flujo de trabajo optimizado entre cálculo y modelado 3D</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Early Access CTA -->
+    <section class="early-access-section">
+        <div class="container">
+            <div class="early-access-content">
+                <h2>Acceso Anticipado</h2>
+                <p>¿Interesado en probar nuestras herramientas antes de su lanzamiento oficial?</p>
+                <p>Regístrese para recibir notificaciones y acceso beta a nuestras calculadoras</p>
+                <form class="early-access-form" id="earlyAccessForm">
+                    <input type="email" placeholder="Su correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Registrarme</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="tools-faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> ¿Las herramientas son gratuitas?</h3>
+                    <p>Las calculadoras básicas estarán disponibles de forma gratuita. Funciones avanzadas y la integración con Revit estarán disponibles mediante suscripción.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> ¿Cuándo estarán disponibles?</h3>
+                    <p>La calculadora de radiadores está programada para finales de 2024. La de piso radiante y la integración con Revit están en desarrollo para 2025.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> ¿Necesito instalar software?</h3>
+                    <p>Las calculadoras funcionarán directamente en el navegador web. La integración con Revit requerirá un plugin.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> ¿Ofrecen soporte técnico?</h3>
+                    <p>Sí, incluiremos documentación completa, tutoriales en video y soporte técnico por email.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Heat&Clima</h4>
+                    <p>Soluciones profesionales en calefacción central desde 2010</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services.html#radiadores">Radiadores</a></li>
+                        <li><a href="services.html#piso-radiante">Piso Radiante</a></li>
+                        <li><a href="services.html#calderas">Calderas</a></li>
+                        <li><a href="services.html#intercambiadores">Intercambiadores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="technical.html">Contenido Técnico</a></li>
+                        <li><a href="portfolio.html">Portafolio</a></li>
+                        <li><a href="tools.html">Herramientas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +54 11 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@heatclima.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Heat&Clima. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/tools.js"></script>
+</body>
+</html>
