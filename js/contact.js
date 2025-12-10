@@ -83,36 +83,36 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             // Don't update if it would interfere with typing
         });
-    }
     
-    // Real-time form validation
-    const requiredInputs = contactForm.querySelectorAll('[required]');
-    requiredInputs.forEach(input => {
-        input.addEventListener('blur', function() {
-            if (this.value.trim() === '') {
-                this.style.borderColor = '#e74c3c';
-            } else {
-                this.style.borderColor = '#27ae60';
-            }
+        // Real-time form validation
+        const requiredInputs = contactForm.querySelectorAll('[required]');
+        requiredInputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() === '') {
+                    this.style.borderColor = '#e74c3c';
+                } else {
+                    this.style.borderColor = '#27ae60';
+                }
+            });
+            
+            input.addEventListener('focus', function() {
+                this.style.borderColor = '#ddd';
+            });
         });
         
-        input.addEventListener('focus', function() {
-            this.style.borderColor = '#ddd';
-        });
-    });
-    
-    // Email validation
-    const emailInput = document.getElementById('email');
-    if (emailInput) {
-        emailInput.addEventListener('blur', function() {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(this.value)) {
-                this.style.borderColor = '#e74c3c';
-                this.setCustomValidity('Por favor ingrese un email válido');
-            } else {
-                this.style.borderColor = '#27ae60';
-                this.setCustomValidity('');
-            }
-        });
+        // Email validation
+        const emailInput = document.getElementById('email');
+        if (emailInput) {
+            emailInput.addEventListener('blur', function() {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(this.value)) {
+                    this.style.borderColor = '#e74c3c';
+                    this.setCustomValidity('Por favor ingrese un email válido');
+                } else {
+                    this.style.borderColor = '#27ae60';
+                    this.setCustomValidity('');
+                }
+            });
+        }
     }
 });
